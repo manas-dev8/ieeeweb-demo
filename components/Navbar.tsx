@@ -42,7 +42,7 @@ export default function Navbar() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-black bg-white font-bold hover:bg-gray-800 px-3 py-2 rounded-md text-sm transition-colors duration-300"
+                  className="text-black bg-white font-bold hover:bg-gray-100 px-3 py-2 rounded-md text-sm transition-colors duration-300"
                 >
                   {item.name}
                 </Link>
@@ -72,9 +72,9 @@ export default function Navbar() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md text-white hover:bg-gray-200 focus:outline-none"
+              className="p-2 rounded-md text-black hover:bg-gray-200 focus:outline-none"
             >
-              {isOpen ? <X className="h-6 w-6 text-white " /> : <Menu className="h-6 w-6" />}
+              {isOpen ? <X className="h-6 w-6 text-black " /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
         </div>
