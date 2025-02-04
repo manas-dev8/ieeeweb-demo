@@ -32,7 +32,7 @@ export default function AboutIEEE() {
   }
 
   return (
-    <section className="py-16 bg-black text-white">
+    <section className="py-16 bg-white text-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8 animate-fade-in-up">About IEEE at Galgotias University</h2>
         <div className="grid md:grid-cols-2 gap-8 items-start">
@@ -56,7 +56,7 @@ export default function AboutIEEE() {
               <li>Access to IEEE&apos;s vast digital library</li>
             </ul>
             <div className="flex space-x-4 mt-6">
-                <Button className="transition-all duration-300 hover:scale-105 bg-black text-white hover:text-black">Join IEEE Galgotias</Button>
+                <Button className="transition-all duration-300 hover:scale-105 bg-white text-black hover:text-black">Join IEEE Galgotias</Button>
               {/* <Button className="transition-all duration-300 rounded-sm hover:scale-105 bg-black text-white hover:text-black">Join IEEE Galgotias</Button> */}
               <Link href="https://tr.ee/VZE64pxyk4">
               <Button variant="outline" className="flex items-center transition-all duration-300 hover:scale-105">
@@ -141,7 +141,7 @@ export default function AboutIEEE() {
               <Button
                 variant="outline"
                 size="icon"
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black backdrop-blur-sm"
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white backdrop-blur-sm"
                 onClick={() => scroll('left')}
               >
                 <ChevronLeft className="h-4 w-4" />
@@ -151,7 +151,7 @@ export default function AboutIEEE() {
               <Button
                 variant="outline"
                 size="icon"
-                className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black backdrop-blur-sm"
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white backdrop-blur-sm"
                 onClick={() => scroll('right')}
               >
                 <ChevronRight className="h-4 w-4" />

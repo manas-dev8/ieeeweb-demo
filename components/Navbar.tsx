@@ -22,7 +22,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full z-50 bg-black shadow-lg">
+    <nav className="fixed w-full z-50 bg-white shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -42,14 +42,14 @@ export default function Navbar() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-white bg-black font-bold hover:bg-gray-800 px-3 py-2 rounded-md text-sm transition-colors duration-300"
+                  className="text-black bg-white font-bold hover:bg-gray-800 px-3 py-2 rounded-md text-sm transition-colors duration-300"
                 >
                   {item.name}
                 </Link>
               ))}
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button className="bg-gray-800 text-white hover:bg-black">Societies</Button>
+                  <Button className="bg-blue-500 text-white hover:bg-blue-500">Societies</Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-56">
                   <DropdownMenuLabel>OUR SOCIETIES</DropdownMenuLabel>
