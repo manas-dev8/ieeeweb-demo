@@ -49,7 +49,7 @@ export default function Navbar() {
               ))}
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button className="bg-gray-300 text-black hover:bg-gray-400">Societies</Button>
+                  <Button className="bg-gray-800 text-white hover:bg-black">Societies</Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-56">
                   <DropdownMenuLabel>OUR SOCIETIES</DropdownMenuLabel>
@@ -72,9 +72,9 @@ export default function Navbar() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md text-black hover:bg-gray-200 focus:outline-none"
+              className="p-2 rounded-md text-white hover:bg-gray-200 focus:outline-none"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? <X className="h-6 w-6 text-white " /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
         </div>

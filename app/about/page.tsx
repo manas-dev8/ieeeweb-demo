@@ -32,7 +32,7 @@ export default function AboutIEEE() {
   }
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-black text-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8 animate-fade-in-up">About IEEE at Galgotias University</h2>
         <div className="grid md:grid-cols-2 gap-8 items-start">
@@ -141,7 +141,7 @@ export default function AboutIEEE() {
               <Button
                 variant="outline"
                 size="icon"
-                className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white/80 backdrop-blur-sm"
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black backdrop-blur-sm"
                 onClick={() => scroll('left')}
               >
                 <ChevronLeft className="h-4 w-4" />
@@ -151,7 +151,7 @@ export default function AboutIEEE() {
               <Button
                 variant="outline"
                 size="icon"
-                className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white/80 backdrop-blur-sm"
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black backdrop-blur-sm"
                 onClick={() => scroll('right')}
               >
                 <ChevronRight className="h-4 w-4" />
