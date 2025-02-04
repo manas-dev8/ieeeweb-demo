@@ -138,7 +138,7 @@ export const SkeletonThree = () => {
         <div className="flex flex-1 w-full h-full flex-col space-y-2  relative">
           {/* TODO */}
           <IconBrandInstagramFilled
-            className="h-20 w-20 absolute z-10 inset-0 m-auto text-black"
+            className="h-20 w-20 absolute z-10 inset-0 m-auto text-white"
           />
           <Image
             src="https://res.cloudinary.com/dgna3swph/image/upload/v1737889513/IMG_1952_s6ss9m_jvkbjt.jpg"
