@@ -30,8 +30,8 @@ export default function Footer() {
               <Image
                 src="https://res.cloudinary.com/anurag256k/image/upload/v1735541549/IEEE/galgotias_v0ccp4.png"
                 alt="Galgotias University Logo"
-                width={140}
-                height={100}
+                width={100}
+                height={90}
               />
             </div>
             <p className="text-sm text-gray-500">
