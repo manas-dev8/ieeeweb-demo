@@ -32,7 +32,7 @@ export default function AboutIEEE() {
   }
 
   return (
-    <section className="py-16 bg-white text-white">
+    <section className="py-16 bg-white text-black">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-8 animate-fade-in-up">About IEEE at Galgotias University</h2>
         <div className="grid md:grid-cols-2 gap-8 items-start">
