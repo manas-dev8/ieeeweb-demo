@@ -46,7 +46,7 @@ export default function RootLayout({
           <ContextMenuTrigger>
             <Navbar />
             
-            <main className=" bg-zinc-100">{children}</main>
+            <main className=" bg-black">{children}</main>
             <ScrollingBanner />
             <Footer />
           </ContextMenuTrigger>

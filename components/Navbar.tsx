@@ -22,7 +22,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full z-50 bg-white shadow-lg">
+    <nav className="fixed w-full z-50 bg-black shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -30,6 +30,8 @@ export default function Navbar() {
               <Image
                 className="h-12 w-auto"
                 src="https://res.cloudinary.com/anurag256k/image/upload/v1735503028/IEEE/ieee-logo_ufoyaw.png"
+                width = {480}
+                height={480}
                 alt="IEEE Logo"
               />
             </Link>
@@ -40,7 +42,7 @@ export default function Navbar() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-black font-bold hover:bg-gray-200 px-3 py-2 rounded-md text-sm transition-colors duration-300"
+                  className="text-white bg-black font-bold hover:bg-gray-800 px-3 py-2 rounded-md text-sm transition-colors duration-300"
                 >
                   {item.name}
                 </Link>

@@ -10,7 +10,7 @@ import Link from "next/link";
 export default function FeaturesSectionDemo() {
   const features = [
     {
-      title: "Track issues effectively",
+      title: "IEEE SB EVENTS HIGHLIGHTS",
       description:
         "Track and manage your project issues with ease using our intuitive interface.",
       skeleton: <SkeletonOne />,
@@ -18,38 +18,39 @@ export default function FeaturesSectionDemo() {
         "col-span-1 lg:col-span-4",
     },
     {
-      title: "Capture pictures with AI",
+      title: "IEEE SB EVENTS HIGHLIGHTS",
       description:
-        "Capture stunning photos effortlessly using our advanced AI technology.",
+        "The IEEE Student Branch at Galgotias University (IEEE GU SB) actively organizes a wide range of technical and professional events throughout the year, providing students with opportunities to enhance their skills and knowledge in cutting-edge technologies. These events include hands-on workshops on Artificial Intelligence, IoT, Blockchain, and Robotics, as well as technical competitions. ",
       skeleton: <SkeletonTwo />,
       className: " col-span-1 lg:col-span-2 ",
     },
     {
       title: "Watch our AICSSYC 2024 HIGLIGHTS",
       description:
-        "Click here to watch the highlights of AICSSYC 2024, the biggest national congress on higlights.",
+        "The AICSSYC (All India Computer Society Student and Young Professionals Congress), in collaboration with IEEE GU SB, organized events connecting students, professionals, and experts in AI, ML, Software Engineering, and Emerging Technologies. This partnership provided industry insights, bridging the gap between theoretical knowledge and real-world application while fostering technical expertise and career growth.",
       skeleton: <SkeletonThree />,
       className:
         "col-span-1 lg:col-span-3",
     },
     {
-      title: "Deploy in seconds",
+      title: "IEEE's GLOBAL RECOGNITION",
       description:
-        "With our blazing fast, state of the art, cutting edge, we are so back cloud servies (read AWS) - you can deploy your model in seconds.",
+        "The Institute of Electrical and Electronics Engineers (IEEE) is the world's largest technical professional organization dedicated to advancing technology for humanity. With over 400,000 members in more than 160 countries, IEEE plays a key role in shaping global technological innovation through its research, publications, standards, and conferences. IEEE has 39 technical societies, each focusing on specific fields of engineering and technology. These societies provide resources, conferences, publications, and networking opportunities for professionals and students worldwide. ",
       skeleton: <SkeletonFour />,
-      className: "col-span-1 lg:col-span-3",
+      className: "col-span-1 lg:col-span-3 ",
     },
   ];
   return (
-    <div className="relative z-20 py-10 bg-zinc-100 lg:py-40 mx-5">
+    <div className="relative z-20 py-10 bg-black lg:py-40 mx-5 text-white">
       <div className="px-8">
-        <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
-          Packed with thousands of Oppurtunities
+        <h4 className="text-4xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-white dark:text-white">
+        WE ARE IEEE GALGOTIAS UNIVERSITY
         </h4>
 
-        <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
-          From Image generation to video generation, Everything AI has APIs for
-          literally everything. It can even create this website copy for you.
+        <p className="text-sm lg:text-base  max-w-7xl  my-4 mx-auto text-white text-center font-normal dark:text-neutral-300">
+        The IEEE Student Branch (SB) at Galgotias University is a vibrant community dedicated to fostering innovation, technical knowledge, and professional development among students passionate about engineering and technology. 
+The branch actively encourages research and paper presentations, providing students with opportunities to showcase their work at IEEE-sponsored events and conferences. Through guest lectures, industrial collaborations, and networking opportunities, IEEE GU SB connects students with industry professionals and the global IEEE network, helping them stay ahead in the ever-evolving technological landscape.  
+
         </p>
       </div>
 
@@ -84,7 +85,7 @@ const FeatureCard = ({
 
 const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
   return (
-    <p className=" max-w-5xl mx-auto text-left tracking-tight text-black dark:text-white text-xl md:text-2xl md:leading-snug">
+    <p className=" max-w-5xl mx-auto text-left tracking-tight text-white dark:text-white text-xl md:text-2xl md:leading-snug">
       {children}
     </p>
   );
@@ -95,8 +96,8 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
     <p
       className={cn(
         "text-sm md:text-base  max-w-4xl text-left mx-auto",
-        "text-neutral-500 text-center font-normal dark:text-neutral-300",
-        "text-left max-w-sm mx-0 md:text-sm my-2"
+        "text-white text-center font-normal dark:text-neutral-300",
+        "text-left max-w mx-0 md:text-sm my-2"
       )}
     >
       {children}
@@ -107,7 +108,7 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
 export const SkeletonOne = () => {
   return (
     <div className="relative flex py-8 px-2 gap-10 h-full">
-      <div className="w-full  p-5  mx-auto bg-white dark:bg-neutral-900 shadow-2xl group h-full">
+      <div className="w-full  p-5  mx-auto bg-black dark:bg-black shadow-2xl group h-full">
         <div className="flex flex-1 w-full h-full flex-col space-y-2  ">
           {/* TODO */}
           <Image
@@ -120,8 +121,8 @@ export const SkeletonOne = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 z-40 inset-x-0 h-60 bg-gradient-to-t from-white dark:from-black via-white dark:via-black to-transparent w-full pointer-events-none" />
-      <div className="absolute top-0 z-40 inset-x-0 h-60 bg-gradient-to-b from-white dark:from-black via-transparent to-transparent w-full pointer-events-none" />
+      <div className="absolute bottom-0 z-40 inset-x-0 h-60 bg-gradient-to-t from-black dark:from-black via-black dark:via-black to-transparent w-full pointer-events-none" />
+      <div className="absolute top-0 z-40 inset-x-0 h-60 bg-gradient-to-b from-black dark:from-black via-transparent to-transparent w-full pointer-events-none" />
     </div>
   );
 };
@@ -137,7 +138,7 @@ export const SkeletonThree = () => {
         <div className="flex flex-1 w-full h-full flex-col space-y-2  relative">
           {/* TODO */}
           <IconBrandInstagramFilled
-            className="h-20 w-20 absolute z-10 inset-0 m-auto  text-red-500"
+            className="h-20 w-20 absolute z-10 inset-0 m-auto text-white"
           />
           <Image
             src="https://res.cloudinary.com/dgna3swph/image/upload/v1737889513/IMG_1952_s6ss9m_jvkbjt.jpg"
@@ -188,7 +189,7 @@ export const SkeletonTwo = () => {
             }}
             whileHover="whileHover"
             whileTap="whileTap"
-            className="rounded-xl -mr-4 mt-4 p-1 bg-white flex-shrink-0 overflow-hidden"
+            className="rounded-xl -mr-4 mt-4 p-1 bg-black flex-shrink-0 overflow-hidden"
           >
             <Image
               src={image}
@@ -210,7 +211,7 @@ export const SkeletonTwo = () => {
             variants={imageVariants}
             whileHover="whileHover"
             whileTap="whileTap"
-            className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800  flex-shrink-0 overflow-hidden"
+            className="rounded-xl -mr-4 mt-4 p-1 bg-black dark:bg-neutral-800  flex-shrink-0 overflow-hidden"
           >
             <Image
               src={image}
@@ -232,7 +233,7 @@ export const SkeletonTwo = () => {
             }}
             whileHover="whileHover"
             whileTap="whileTap"
-            className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 flex-shrink-0 overflow-hidden"
+            className="rounded-xl -mr-4 mt-4 p-1 bg-black dark:bg-neutral-800 flex-shrink-0 overflow-hidden"
           >
             <Image
               src={image}
@@ -254,7 +255,7 @@ export const SkeletonTwo = () => {
             }}
             whileHover="whileHover"
             whileTap="whileTap"
-            className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 flex-shrink-0 overflow-hidden"
+            className="rounded-xl -mr-4 mt-4 p-1 bg-black dark:bg-neutral-800 flex-shrink-0 overflow-hidden"
           >
             <Image
               src={image}
@@ -267,8 +268,8 @@ export const SkeletonTwo = () => {
         ))}
       </div>
 
-      <div className="absolute left-0 z-[100] inset-y-0 w-20 bg-gradient-to-r from-white dark:from-black to-transparent  h-full pointer-events-none" />
-      <div className="absolute right-0 z-[100] inset-y-0 w-20 bg-gradient-to-l from-white dark:from-black  to-transparent h-full pointer-events-none" />
+      <div className="absolute left-0 z-[100] inset-y-0 w-20 bg-gradient-to-r from-black dark:from-black to-transparent  h-full pointer-events-none" />
+      <div className="absolute right-0 z-[100] inset-y-0 w-20 bg-gradient-to-l from-black dark:from-black  to-transparent h-full pointer-events-none" />
     </div>
   );
 };
