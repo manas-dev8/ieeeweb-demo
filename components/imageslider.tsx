@@ -69,7 +69,7 @@ export function ImagesSliderDemo() {
           >
             Explore More
           </Link>
-          <div className="text-4xl mx-auto pl-12 pt-5 font-semibold text-white">
+          <div className="text-4xl mx-auto pt-5 font-semibold text-white">
             Join a
             <FlipWords className="text-red" words={words} /> <br />
             Technology and Research Community.
