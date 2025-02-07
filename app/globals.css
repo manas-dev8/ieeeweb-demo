@@ -43,12 +43,12 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 7px;
+  width: 5px;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(0, 183, 255);
-  border-radius: 10px;
+  background-color: rgb(50, 197, 255);
+  border-radius: 3px;
 }
 
 body::-webkit-scrollbar-track {

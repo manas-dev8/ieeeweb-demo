@@ -29,8 +29,8 @@ export function ImagesSliderDemo() {
   ];
 
   const images = [
-    "https://res.cloudinary.com/dgna3swph/image/upload/c_crop,ar_9:16/v1737888463/IMG_1624_vjcw2f_ue1gh4.jpg",
-    "https://res.cloudinary.com/dgna3swph/image/upload/c_crop,ar_9:16/v1737888463/IMG_1624_vjcw2f_ue1gh4.jpg",
+    "https://res.cloudinary.com/dgna3swph/image/upload/v1737884371/DSC01065_qvd85k.jpg",
+    "https://res.cloudinary.com/dgna3swph/image/upload/v1737888463/IMG_1624_vjcw2f_ue1gh4.jpg",
    ];
 
   return (
@@ -51,7 +51,7 @@ export function ImagesSliderDemo() {
       >
         <div className="relative z-10 text-center">
           <Image
-            src="https://res.cloudinary.com/anurag256k/image/upload/v1735503028/IEEE/ieee-logo_ufoyaw.png"
+            src="https://res.cloudinary.com/dgna3swph/image/upload/v1738944245/ieee-logo_ow9dwc.png"
             alt="IEEE Logo"
             width={500}
             height={500}
