@@ -42,3 +42,15 @@ body {
   animation: scroll-x 15s ease-in-out infinite;
 }
 
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 183, 255);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
