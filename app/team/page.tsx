@@ -71,16 +71,16 @@ const boardMembers: TeamMember[] = [
   // Add 4 more board members here
 ];
 
-const executiveCommittee: TeamMember[] = [
-  {
-    name: "Jane Smith",
-    role: "Event Coordinator",
-    image: "/placeholder.svg?height=300&width=300",
-    bio: "Jane is an Electronics major who loves to organize tech events and workshops.",
-    email: "jane.smith@ieee.org"
-  },
-  // Add 20 more executive committee members here
-];
+// const executiveCommittee: TeamMember[] = [
+//   {
+//     name: "Jane Smith",
+//     role: "Event Coordinator",
+//     image: "/placeholder.svg?height=300&width=300",
+//     bio: "Jane is an Electronics major who loves to organize tech events and workshops.",
+//     email: "jane.smith@ieee.org"
+//   },
+//   // Add 20 more executive committee members here
+// ];
 
 const subCommunityA: TeamMember[] = [
 
@@ -319,7 +319,7 @@ export default function TeamsPage() {
             <TeamGrid members={subCommunityD} />
             <h2 className="text-2xl font-semibold pt-5 text-blue-900 mb-6">Media Leads</h2>
             <TeamGrid members={subCommunityE} />
-            <h2 className="text-2xl font-semibold pt-5 text-blue-900 mb-6">operation Leads</h2>
+            <h2 className="text-2xl font-semibold pt-5 text-blue-900 mb-6">Operation Leads</h2>
             <TeamGrid members={subCommunityF} />
 
           </TabsContent>
