@@ -194,34 +194,29 @@ const subCommunityC: TeamMember[] = [
 ];
 const subCommunityD: TeamMember[] = [
   {
-    name: "Shubh Sinha",
-    role: "Event Coordinator",
+    name: "Nalinish Ranjan",
+    role: "Design Lead",
     image: "/placeholder.svg?height=300&width=300",
     bio: "Jane is an Electronics major who loves to organize tech events and workshops.",
     email: "jane.smith@ieee.org"
   },
-  // Add 20 more executive committee members here
-];
-const subCommunityE: TeamMember[] = [
+  {
+    name: "Shubh Sinha",
+    role: "Design Co-Lead",
+    image: "/placeholder.svg?height=300&width=300",
+    bio: "Jane is an Electronics major who loves to organize tech events and workshops.",
+    email: "saumyasinha@ieee.org"
+  },
   {
     name: "Ritvik Rana",
-    role: "Event Coordinator",
+    role: "Media Lead",
     image: "/placeholder.svg?height=300&width=300",
     bio: "Jane is an Electronics major who loves to organize tech events and workshops.",
     email: "jane.smith@ieee.org"
   },
   // Add 20 more executive committee members here
 ];
-const subCommunityF: TeamMember[] = [
-  {
-    name: "Jane Smith",
-    role: "Event Coordinator",
-    image: "/placeholder.svg?height=300&width=300",
-    bio: "Jane is an Electronics major who loves to organize tech events and workshops.",
-    email: "jane.smith@ieee.org"
-  },
-  // Add 20 more executive committee members here
-];
+
 
 function MemberCard({ member }: { member: TeamMember }) {
   return (
@@ -315,13 +310,9 @@ export default function TeamsPage() {
             <TeamGrid members={subCommunityB} />
             <h2 className="text-2xl font-semibold pt-5 text-blue-900 mb-6">Women in Engineering</h2>
             <TeamGrid members={subCommunityC} />
-            <h2 className="text-2xl font-semibold pt-5 text-blue-900 mb-6">Design Leads</h2>
+            <h2 className="text-2xl font-semibold pt-5 text-blue-900 mb-6">Creative Committee</h2>
             <TeamGrid members={subCommunityD} />
-            <h2 className="text-2xl font-semibold pt-5 text-blue-900 mb-6">Media Leads</h2>
-            <TeamGrid members={subCommunityE} />
-            <h2 className="text-2xl font-semibold pt-5 text-blue-900 mb-6">Operation Leads</h2>
-            <TeamGrid members={subCommunityF} />
-
+           
           </TabsContent>
           {/* <TabsContent value="subA">
             <h2 className="text-2xl font-semibold text-blue-900 mb-6">Computer Society</h2>
