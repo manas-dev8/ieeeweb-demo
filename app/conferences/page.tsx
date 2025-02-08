@@ -48,7 +48,7 @@ export default function ConferencesPage() {
                 </div>
                 <div className="p-6">
                   <CardHeader>
-                    <CardTitle className="text-xl font-semibold text-blue-700 dark:text-blue-300">IEEE GUSB 2023</CardTitle>
+                    <CardTitle className="text-xl font-semibold text-blue-700 dark:text-blue-300">ICSSAI 2025</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <CardDescription className="text-gray-600 dark:text-gray-400">
