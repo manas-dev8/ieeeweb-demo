@@ -18,7 +18,7 @@ export default function AwardsPage() {
 
       {/* Awards Gallery */}
       <section className="py-16 px-4 md:px-8">
-        <h2 className="text-3xl font-bold text-white text-center mb-12">Award Ceremonies</h2>
+        <h2 className="text-3xl font-bold text-white text-center mb-12">Student Branch Awards</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {ceremonies.map((ceremony, index) => (
             <div key={index} className="group relative rounded-xl overflow-hidden">
@@ -39,7 +39,7 @@ export default function AwardsPage() {
 
       {/* Awards Cards */}
       <section className="py-16 px-4 md:px-8 bg-[#151833]">
-        <h2 className="text-3xl font-bold text-white text-center mb-12">Our Awards</h2>
+        <h2 className="text-3xl font-bold text-white text-center mb-12">Volunteer Awards</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {awards.map((award, index) => (
             <Card key={index} className="bg-[#1a1f3c] border-[#2a2f4c] text-white">
@@ -68,26 +68,7 @@ const ceremonies = [
     image: "/placeholder.svg?height=300&width=400",
     caption: "Annual IEEE Awards Night 2024 - Celebrating Technical Excellence",
   },
-  {
-    image: "/placeholder.svg?height=300&width=400",
-    caption: "Regional Student Branch Awards Ceremony",
-  },
-  {
-    image: "/placeholder.svg?height=300&width=400",
-    caption: "IEEE International Conference Recognition",
-  },
-  {
-    image: "/placeholder.svg?height=300&width=400",
-    caption: "Technical Project Exhibition Awards",
-  },
-  {
-    image: "/placeholder.svg?height=300&width=400",
-    caption: "Outstanding Student Branch Activities Recognition",
-  },
-  {
-    image: "/placeholder.svg?height=300&width=400",
-    caption: "IEEE Day Celebrations and Achievements",
-  },
+  
 ]
 
 const awards = [
@@ -98,35 +79,6 @@ const awards = [
       "Recognized for outstanding contributions to technical education and professional development of students.",
     date: "December 2024",
   },
-  {
-    icon: "award",
-    title: "Technical Excellence Award",
-    description: "Awarded for exceptional technical projects and innovations in emerging technologies.",
-    date: "November 2024",
-  },
-  {
-    icon: "trophy",
-    title: "Outstanding Activity Award",
-    description: "Honored for organizing impactful technical workshops and conferences throughout the year.",
-    date: "October 2024",
-  },
-  {
-    icon: "award",
-    title: "Research Innovation Prize",
-    description: "Recognized for groundbreaking research contributions in IEEE fields of interest.",
-    date: "September 2024",
-  },
-  {
-    icon: "trophy",
-    title: "Community Impact Award",
-    description: "Awarded for significant contributions to technical education in the local community.",
-    date: "August 2024",
-  },
-  {
-    icon: "award",
-    title: "Leadership Excellence",
-    description: "Recognition for outstanding leadership and management of the student branch.",
-    date: "July 2024",
-  },
+  
 ]
 
