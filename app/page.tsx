@@ -7,6 +7,7 @@
 import FeaturesSectionDemo from "@/components/ui/feature";
 import ScrollingBanner from "@/components/scrolling-banner";
 import { ImagesSliderDemo } from "@/components/imageslider";
+import Intro from "@/components/Intro"
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
         <ImagesSliderDemo />
       </div>
       <ScrollingBanner />
+      <Intro/>
       <FeaturesSectionDemo />
     </>
   );

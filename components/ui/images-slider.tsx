@@ -87,7 +87,7 @@ export const ImagesSlider = ({
   const slideVariants = {
     initial: {
       scale: 0,
-      opacity: 0,
+      opacity: 1,
       rotateX: 45,
     },
     visible: {
@@ -130,7 +130,7 @@ export const ImagesSlider = ({
       {areImagesLoaded && children}
       {areImagesLoaded && overlay && (
         <div
-          className={cn("absolute inset-0 bg-black/60 z-40", overlayClassName)}
+          className={cn("absolute inset-0 z-40", overlayClassName)}
         />
       )}
 
