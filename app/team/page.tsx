@@ -197,22 +197,22 @@ const subCommunityD: TeamMember[] = [
     name: "Nalinish Ranjan",
     role: "Design Lead",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Jane is an Electronics major who loves to organize tech events and workshops.",
+    bio: "As Design Co-Lead of the IEEE Student Branch, Nalinish Ranjan is responsible for overseeing the visual identity and creative direction of the branch. He works closely with the team to design impactful content, ensuring consistency and enhancing the branch’s outreach and engagement.",
     email: "jane.smith@ieee.org"
   },
   {
     name: "Shubh Sinha",
     role: "Design Co-Lead",
-    image: "/placeholder.svg?height=300&width=300",
-    bio: "Jane is an Electronics major who loves to organize tech events and workshops.",
+    image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1740595746/shubh_omgmtn.jpg",
+    bio: "As Co-Lead of the IEEE Student Branch, Saumya Sinha plays a vital role in guiding the team, driving strategic initiatives, and ensuring the successful execution of events and programs. His leadership fosters collaboration, innovation, and the overall growth of the student branch.",
     email: "saumyasinha@ieee.org"
   },
   {
-    name: "Ritvik Rana",
+    name: "Rithvik Rana",
     role: "Media Lead",
-    image: "/placeholder.svg?height=300&width=300",
-    bio: "Jane is an Electronics major who loves to organize tech events and workshops.",
-    email: "jane.smith@ieee.org"
+    image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1740595750/rhitvik_e152bq.jpg",
+    bio: "As Media Lead of the IEEE Student Branch, Rithvik Rana is responsible for managing the branch’s digital presence and media outreach. He ensures effective communication by creating engaging content, handling social media platforms, and promoting events and initiatives. His efforts enhance the visibility and engagement of the student branch within the community.",
+    email: "rithvikrana@ieee.org"
   },
   // Add 20 more executive committee members here
 ];
