@@ -14,22 +14,6 @@ interface TeamMember {
   email: string;
 }
 
-const patMembers: TeamMember[] = [
-  {
-    name: "Prof. Dr. Avadhesh kuamr",
-    role: "Vice-Chair UP Section/Pro Vice Chancellor",
-    image: "/placeholder.svg?height=300&width=300",
-    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
-    email: "john.doe@ieee.org"
-  },
-  {
-    name: "Dr. Aanjey Mani Tripathi",
-    role: "IEEE Counselor",
-    image: "/placeholder.svg?height=300&width=300",
-    bio: "John is a final year Computer Science student with a passion for AI and robotics.",
-    email: "john.doe@ieee.org"
-  },
-];
 
 const boardMembers: TeamMember[] = [
 
@@ -217,40 +201,105 @@ const subCommunityD: TeamMember[] = [
   // Add 20 more executive committee members here
 ];
 
+const patCommunityA: TeamMember[] = [
+
+  {
+    name: "Dr. Suneel Galgotia",
+    role: "Hon'ble Chancellor - Galgotias University, India",
+    image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1741289813/sunilSir_y9xmy2.jpg ",
+    bio: "As Chair of the IEEE Computer Society, Gaurang leads the team in promoting advancements in computer science and technology. He organizes events and workshops to enhance members' technical skills and industry knowledge..",
+    email: "gaurangpant22@ieee.org"
+  }
+];
+
+const patCommunityB: TeamMember[] = [
+  {
+    name: "Dr. Dhruv Galgotia",
+    role: "CEO - Galgotias University, India",
+    image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1741289813/dhruvSir_aaizql.jpg",
+    bio: "As Chairperson of IEEE IAS, Shubham oversees the society’s activities, focusing on industrial applications of engineering. His leadership is instrumental in bridging the gap between academics and industry for the members.",
+    email: "shubham0568@ieee.org"
+  },
+  {
+    name: "Dr. M.B.Kayala",
+    role: "Vice Chancellor - Galgotias University, India",
+    image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1741290074/vcsir_aw86du.jpg",
+    bio: "Adarsh, as Vice Chairperson, supports the Chairperson in organizing events and projects. He focuses on enhancing member participation and ensuring the society meets its objectives efficiently.",
+    email: "adarsh265@ieee.org"
+  },
+  {
+    name: "Ms. Aradhana Galgotia",
+    role: "Director Operations - Galgotias University, India",
+    image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1741289813/aradhanaMaam_nkeqp0.jpg",
+    bio: "As Secretary of IEEE IAS, Urvashi is the backbone of administrative operations. She ensures smooth coordination, documentation, and communication within the society.",
+    email: "urvashirawat@ieee.org"
+  },
+  {
+    name: "Prof.(Dr.) Avadhesh Kumar",
+    role: "Pro-Vice Chancellor - Galgotias University, India", 
+    image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1741289813/pvcsir_vs64x5.jpg",
+    bio: "Ashish, the Web Master of IEEE IAS, is responsible for guiding technical initiatives and projects. He organizes technical workshops, webinars, and events to inspire innovation and learning among members.",
+    email: "ashishbhardwaj@ieee.org"
+  },
+  
+];
+
+const patCommunityC: TeamMember[] = [
+  {
+    name: "Dr. Shrddha Sagar",
+    role: "Chairperson",
+    image: "",
+    bio: "Monica, as Chairperson, leads the IEEE WIE group with a vision to empower women in engineering and technology. She organizes initiatives to inspire and support women pursuing technical careers.",
+    email: "mona_13@ieee.org"
+  },
+  {
+    name: "Dr. Aanjey Mani Tripathi",
+    role: "Vice Chairperson",
+    image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1741289813/Aanjey_wkazg5.jpg",
+    bio: "Yashi serves as Vice Chair, working closely with the Chairperson to manage operations and promote the growth of WIE. She helps in strategizing and implementing impactful programs for members.",
+    email: "yashikatiyar@ieee.org"
+  },
+  {
+    name: "Dr. Meenakshi Awasthi",
+    role: "Secretary",
+    image: "",
+    bio: "As Secretary of IEEE WIE, Tanisha plays a key role in maintaining communication and organizing events. She ensures accurate documentation and smooth operations within the team.",
+    email: "tanishabhatnagar2703@ieee.org"
+  },
+  
+];
 
 function MemberCard({ member }: { member: TeamMember }) {
   return (
     <Dialog>
       <DialogTrigger>
-        <Card className="bg-white bg-opacity-40 backdrop-blur-md rounded-xl shadow-neumorphic hover:shadow-neumorphic-hover transition-shadow duration-300">
-          <CardContent className="p-6">
-            <div className="flex flex-col items-center">
-              <div className="w-32 h-32 rounded-full overflow-hidden mb-4 shadow-neumorphic">
-                <Image
-                  src={member.image || "/placeholder.svg"}
-                  alt={member.name}
-                  width={128}
-                  height={128}
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="text-lg font-semibold text-blue-900">{member.name}</h3>
-              <p className="text-blue-600 text-sm">{member.role}</p>
+        <Card className="bg-white bg-opacity-40 backdrop-blur-md rounded-xl shadow-neumorphic hover:shadow-neumorphic-hover transition-shadow duration-300 w-800 h-96 flex flex-col justify-center">
+          <CardContent className="p-6 flex flex-col items-center">
+            <div className="w-4400 h-4400 rounded-full overflow-hidden mb-6 shadow-neumorphic">
+              <Image
+                src={member.image || "/placeholder.svg"}
+                alt={member.name}
+                width={176}
+                height={176}
+                className="object-cover"
+              />
             </div>
+            <h3 className="text-lg font-semibold text-blue-900">{member.name}</h3>
+            <p className="text-blue-600 text-sm">{member.role}</p>
           </CardContent>
         </Card>
       </DialogTrigger>
-      <DialogContent className="bg-white bg-opacity-90 backdrop-blur-md rounded-xl shadow-neumorphic">
+      <DialogContent className="bg-white bg-opacity-90 backdrop-blur-md rounded-xl shadow-neumorphic p-6 w-[28rem]">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-blue-900">{member.name}</DialogTitle>
         </DialogHeader>
-        <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
-          <div className="w-48 h-48 rounded-full overflow-hidden shadow-neumorphic">
+        <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+          <div className="w-3000 h-3000 rounded-full overflow-hidden shadow-neumorphic">
             <Image
               src={member.image || "/placeholder.svg"}
               alt={member.name}
-              width={192}
-              height={192}
+              width={1760}
+              height={1760}
               className="object-cover"
             />
           </div>
@@ -264,8 +313,9 @@ function MemberCard({ member }: { member: TeamMember }) {
         </div>
       </DialogContent>
     </Dialog>
-  )
+  );
 }
+
 
 function TeamGrid({ members }: { members: TeamMember[] }) {
   return (
@@ -293,8 +343,13 @@ export default function TeamsPage() {
             {/* <TabsTrigger value="subC" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Women in Engineering</TabsTrigger> */}
           </TabsList>
           <TabsContent value="PAT">
-            <h2 className="text-2xl font-semibold text-blue-900 mb-6">PATRONS</h2>
-            <TeamGrid members={patMembers} />
+            <h2 className="text-2xl font-semibold text-blue-900 mb-6 text-center">PATRONS</h2>
+            <h2 className="text-2xl font-semibold text-blue-900 mb-6">Chief Patron</h2>
+            <TeamGrid members={patCommunityA} />
+            <h2 className="text-2xl font-semibold text-blue-900 mb-3 pt-4 ">Patrons</h2>
+            <TeamGrid members={patCommunityB} />
+            <h2 className="text-2xl font-semibold text-blue-900 mb-6 ">Advisors</h2>
+            <TeamGrid members={patCommunityC} />
           </TabsContent>
           <TabsContent value="board">
             <h2 className="text-2xl font-semibold text-blue-900 mb-6">Board Team</h2>

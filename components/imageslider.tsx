@@ -6,8 +6,10 @@ import { ImagesSlider } from "@/components/ui/images-slider";
 export function ImagesSliderDemo() {
 
   const images = [
-    "https://res.cloudinary.com/dgna3swph/image/upload/e_auto_brightness/DSC01065_qvd85k.jpg",
-    "https://res.cloudinary.com/dgna3swph/image/upload/e_auto_brightness/IMG_1624_vjcw2f_ue1gh4.jpg",
+    "https://res.cloudinary.com/dgna3swph/image/upload/c_crop,w_4000,h_2667/v1741287531/YS0_8171_iigcgb.jpg",
+    "https://res.cloudinary.com/dgna3swph/image/upload/v1741288705/DSC07170_coyqn0.jpg",
+    "https://res.cloudinary.com/dgna3swph/image/upload/v1741287532/SAM_3177_xlxi0h.jpg",
+    "https://res.cloudinary.com/dgna3swph/image/upload/v1741289132/DSC09852_blblck.jpg",
   ];
   
 

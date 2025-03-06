@@ -33,7 +33,7 @@ export default function Intro() {
       className="flex flex-col justify-center items-center mt-20"
     >
       <div className="relative text-center">
-        <h1 className="text-4xl md:text-6xl font-bold text-black mb-4">
+        <h1 className="text-4xl md:text-6xl  font-bold text-black mb-4">
           IEEE Student Branch
         </h1>
         <h2 className="text-2xl md:text-3xl font-semibold text-red-600 mb-8">

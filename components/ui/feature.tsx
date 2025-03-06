@@ -24,21 +24,7 @@ export default function FeaturesSectionDemo() {
       skeleton: <SkeletonTwo />,
       className: " col-span-1 lg:col-span-2 ",
     },
-    {
-      title: "Watch our AICSSYC 2024 HIGLIGHTS",
-      description:
-        "The AICSSYC (All India Computer Society Student and Young Professionals Congress), in collaboration with IEEE GU SB, organized events connecting students, professionals, and experts in AI, ML, Software Engineering, and Emerging Technologies. This partnership provided industry insights, bridging the gap between theoretical knowledge and real-world application while fostering technical expertise and career growth.",
-      skeleton: <SkeletonThree />,
-      className:
-        "col-span-1 lg:col-span-3",
-    },
-    {
-      title: "IEEE's GLOBAL RECOGNITION",
-      description:
-        "The Institute of Electrical and Electronics Engineers (IEEE) is the world's largest technical professional organization dedicated to advancing technology for humanity. With over 400,000 members in more than 160 countries, IEEE plays a key role in shaping global technological innovation through its research, publications, standards, and conferences. IEEE has 39 technical societies, each focusing on specific fields of engineering and technology. These societies provide resources, conferences, publications, and networking opportunities for professionals and students worldwide. ",
-      skeleton: <SkeletonFour />,
-      className: "col-span-1 lg:col-span-3 ",
-    },
+    
   ];
   return (
     <div className="relative z-20 py-10 bg-white lg:py-40 mx-5 text-black">
@@ -112,10 +98,10 @@ export const SkeletonOne = () => {
         <div className="flex flex-1 w-full h-full flex-col space-y-2  ">
           {/* TODO */}
           <Image
-            src="https://res.cloudinary.com/dgna3swph/image/upload/c_crop,ar_9:16/v1737888463/IMG_1624_vjcw2f_ue1gh4.jpg"
+            src=""
             alt="header"
-            width={800}
-            height={800}
+            width={400}
+            height={400}
             className="h-full w-full aspect-square object-cover object-left-top rounded-sm"
           />
         </div>
@@ -127,31 +113,6 @@ export const SkeletonOne = () => {
   );
 };
 
-export const SkeletonThree = () => {
-  return (
-    <Link
-      href="https://www.instagram.com/reel/DBVSi5XSOiJ/?igsh=YjIxZGtneTgyaWxs"
-      target="__blank"
-      className="relative flex gap-10  h-full group/image"
-    >
-      <div className="w-full  mx-auto bg-transparent dark:bg-transparent group h-full">
-        <div className="flex flex-1 w-full h-full flex-col space-y-2  relative">
-          {/* TODO */}
-          <IconBrandInstagramFilled
-            className="h-20 w-20 absolute z-10 inset-0 m-auto text-white"
-          />
-          <Image
-            src="https://res.cloudinary.com/dgna3swph/image/upload/v1737889513/IMG_1952_s6ss9m_jvkbjt.jpg"
-            alt="header"
-            width={800}
-            height={800}
-            className="h-full w-full aspect-square object-cover object-center rounded-sm blur-none group-hover/image:blur-md transition-all duration-200"
-          />
-        </div>
-      </div>
-    </Link>
-  );
-};
 
 export const SkeletonTwo = () => {
   const images = [
@@ -274,68 +235,3 @@ export const SkeletonTwo = () => {
   );
 };
 
-export const SkeletonFour = () => {
-  return (
-    <div className="h-60 md:h-60  flex flex-col items-center relative bg-transparent dark:bg-transparent mt-10 ">
-      <Globe className="absolute -right-10 md:-right-10 -bottom-80 md:-bottom-72" />
-    </div>
-  );
-};
-
-export const Globe = ({ className }: { className?: string }) => {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-
-  useEffect(() => {
-    let phi = 0;
-
-    if (!canvasRef.current) return;
-
-    const globe = createGlobe(canvasRef.current, {
-      devicePixelRatio: 2,
-      width: 600 * 2,
-      height: 600 * 2,
-      phi: 0,
-      theta: 0,
-      dark: 0.0,
-      diffuse: 1.2,
-      mapSamples: 16000,
-      mapBrightness: 6,
-      baseColor: [0.53, 0.81, 1], // light blue
-      markerColor: [1, 0, 0], // also light blue
-      glowColor: [0,0.6, 0.8],  // darker blue highlight
-      markers: [
-        { location: [37.7749, -122.4194], size: 0.05 }, // San Francisco
-        { location: [34.0522, -118.2437], size: 0.05 }, // Los Angeles
-        { location: [51.5074, -0.1278], size: 0.05 }, // London
-        { location: [48.8566, 2.3522], size: 0.05 }, // Paris
-        { location: [35.6895, 139.6917], size: 0.05 }, // Tokyo
-        { location: [28.6139, 77.209], size: 0.09 }, // New Delhi
-        { location: [55.7558, 37.6173], size: 0.05 }, // Moscow
-        { location: [-33.8688, 151.2093], size: 0.05 }, // Sydney
-        { location: [40.7128, -74.006], size: 0.05 }, // New York
-        { location: [19.076, 72.8777], size: 0.05 }, // Mumbai
-        { location: [39.9042, 116.4074], size: 0.05 }, // Beijing
-        { location: [52.52, 13.4050], size: 0.05 }, // Berlin
-        { location: [41.9028, 12.4964], size: 0.05 }, // Rome
-        { location: [-23.5505, -46.6333], size: 0.05 }, // São Paulo
-        { location: [1.3521, 103.8198], size: 0.05 }, // Singapore
-      ],
-      onRender: (state) => {
-      state.phi = phi;
-      phi += 0.01;
-      },
-    });
-
-    return () => {
-      globe.destroy();
-    };
-  }, []);
-
-  return (
-    <canvas
-      ref={canvasRef}
-      style={{ width: 600, height: 600, maxWidth: "100%", aspectRatio: 1 }}
-      className={className}
-    />
-  );
-};
