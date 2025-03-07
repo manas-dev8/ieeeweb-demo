@@ -1,4 +1,4 @@
-import { config } from "process";
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -30,7 +30,7 @@ module.exports = {
         "fade-in-up": "fade-in-up 0.5s ease-out",
         "fade-in-left": "fade-in-left 0.5s ease-out",
         "fade-in-right": "fade-in-right 0.5s ease-out",
-        'scroll-x': 'scroll-x 20s linear infinite',
+        "scroll-x": "scroll-x 20s linear infinite",
       },
       keyframes: {
         moveHorizontal: {
@@ -38,88 +38,76 @@ module.exports = {
           "50%": { transform: "translateX(50%) translateY(10%)" },
           "100%": { transform: "translateX(-50%) translateY(-10%)" },
         },
-  			moveInCircle: {
+        moveInCircle: {
           "0%": { transform: "rotate(0deg)" },
           "50%": { transform: "rotate(180deg)" },
           "100%": { transform: "rotate(360deg)" },
-  				},
-  			moveVertical: {
+        },
+        moveVertical: {
           "0%": { transform: "translateY(-50%)" },
           "50%": { transform: "translateY(50%)" },
           "100%": { transform: "translateY(-50%)" },
-  				},
+        },
         "fade-in-up": {
           "0%": { opacity: "0", transform: "translateY(10px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
-  				},
+        },
         "fade-in-left": {
           "0%": { opacity: "0", transform: "translateX(-10px)" },
           "100%": { opacity: "1", transform: "translateX(0)" },
-  			},
+        },
         "fade-in-right": {
           "0%": { opacity: "0", transform: "translateX(10px)" },
           "100%": { opacity: "1", transform: "translateX(0)" },
-  				 },
-        'scroll-x': {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-100%)' },
         },
-  			},
-  		colors: {
+        "scroll-x": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+      colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-  			card: {
+        card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
-  			},
-  			popover: {
+        },
+        popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
-  			},
-  			primary: {
+        },
+        primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
-  			},
-  			secondary: {
+        },
+        secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
-  			},
-  			muted: {
+        },
+        muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
-  			},
-  			accent: {
+        },
+        accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
-  			},
-  			destructive: {
+        },
+        destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
-  			},
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-  			chart: {
+        chart: {
           "1": "hsl(var(--chart-1))",
           "2": "hsl(var(--chart-2))",
           "3": "hsl(var(--chart-3))",
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
-  		},
-  },  // @anurag-bit says: Do not touch this line or below, i have no idea how this is fkin working, it simply does the UI rouding and stuff
-      // borderRadius: {
-      //   lg: "var(--radius)",
-      //   md: "calc(var(--radius) - 2px)",
-      //   sm: "calc(var(--radius) - 40px)",
-      // },
+        },
+      },
     },
   },
-  plugins: [
-    
-    require("tailwindcss-animate"),
-
-    
-  ],
+  plugins: [ require("tailwindcss-animate")],
 };
-
-export default config;

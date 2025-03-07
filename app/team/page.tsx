@@ -54,18 +54,6 @@ const boardMembers: TeamMember[] = [
   },
   // Add 4 more board members here
 ];
-
-// const executiveCommittee: TeamMember[] = [
-//   {
-//     name: "Jane Smith",
-//     role: "Event Coordinator",
-//     image: "/placeholder.svg?height=300&width=300",
-//     bio: "Jane is an Electronics major who loves to organize tech events and workshops.",
-//     email: "jane.smith@ieee.org"
-//   },
-//   // Add 20 more executive committee members here
-// ];
-
 const subCommunityA: TeamMember[] = [
 
   {
@@ -202,72 +190,78 @@ const subCommunityD: TeamMember[] = [
 ];
 
 const patCommunityA: TeamMember[] = [
-
-  {
-    name: "Dr. Suneel Galgotia",
-    role: "Hon'ble Chancellor - Galgotias University, India",
-    image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1741289813/sunilSir_y9xmy2.jpg ",
-    bio: "As Chair of the IEEE Computer Society, Gaurang leads the team in promoting advancements in computer science and technology. He organizes events and workshops to enhance members' technical skills and industry knowledge..",
-    email: "gaurangpant22@ieee.org"
-  }
-];
-
-const patCommunityB: TeamMember[] = [
-  {
-    name: "Dr. Dhruv Galgotia",
-    role: "CEO - Galgotias University, India",
-    image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1741289813/dhruvSir_aaizql.jpg",
-    bio: "As Chairperson of IEEE IAS, Shubham oversees the society’s activities, focusing on industrial applications of engineering. His leadership is instrumental in bridging the gap between academics and industry for the members.",
-    email: "shubham0568@ieee.org"
-  },
-  {
-    name: "Dr. M.B.Kayala",
-    role: "Vice Chancellor - Galgotias University, India",
-    image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1741290074/vcsir_aw86du.jpg",
-    bio: "Adarsh, as Vice Chairperson, supports the Chairperson in organizing events and projects. He focuses on enhancing member participation and ensuring the society meets its objectives efficiently.",
-    email: "adarsh265@ieee.org"
-  },
-  {
-    name: "Ms. Aradhana Galgotia",
-    role: "Director Operations - Galgotias University, India",
-    image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1741289813/aradhanaMaam_nkeqp0.jpg",
-    bio: "As Secretary of IEEE IAS, Urvashi is the backbone of administrative operations. She ensures smooth coordination, documentation, and communication within the society.",
-    email: "urvashirawat@ieee.org"
-  },
-  {
-    name: "Prof.(Dr.) Avadhesh Kumar",
-    role: "Pro-Vice Chancellor - Galgotias University, India", 
-    image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1741289813/pvcsir_vs64x5.jpg",
-    bio: "Ashish, the Web Master of IEEE IAS, is responsible for guiding technical initiatives and projects. He organizes technical workshops, webinars, and events to inspire innovation and learning among members.",
-    email: "ashishbhardwaj@ieee.org"
-  },
+    {
+      name: "Dr. Suneel Galgotia",
+      role: "Hon'ble Chancellor - Galgotias University, India",
+      image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1741289813/sunilSir_y9xmy2.jpg",
+      bio: "Dr. Suneel Galgotia is a visionary academic leader and the Hon’ble Chancellor of Galgotias University. With decades of experience in the education sector, he has played a pivotal role in transforming Galgotias University into a center of academic excellence. Under his leadership, the institution has achieved remarkable milestones in research, innovation, and student success.",
+      email: ""
+    }
+  ];
   
-];
-
-const patCommunityC: TeamMember[] = [
-  {
-    name: "Dr. Shrddha Sagar",
-    role: "Chairperson",
-    image: "",
-    bio: "Monica, as Chairperson, leads the IEEE WIE group with a vision to empower women in engineering and technology. She organizes initiatives to inspire and support women pursuing technical careers.",
-    email: "mona_13@ieee.org"
-  },
-  {
-    name: "Dr. Aanjey Mani Tripathi",
-    role: "Vice Chairperson",
-    image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1741289813/Aanjey_wkazg5.jpg",
-    bio: "Yashi serves as Vice Chair, working closely with the Chairperson to manage operations and promote the growth of WIE. She helps in strategizing and implementing impactful programs for members.",
-    email: "yashikatiyar@ieee.org"
-  },
-  {
-    name: "Dr. Meenakshi Awasthi",
-    role: "Secretary",
-    image: "",
-    bio: "As Secretary of IEEE WIE, Tanisha plays a key role in maintaining communication and organizing events. She ensures accurate documentation and smooth operations within the team.",
-    email: "tanishabhatnagar2703@ieee.org"
-  },
+  const patCommunityB: TeamMember[] = [
+    {
+      name: "Dr. Dhruv Galgotia",
+      role: "CEO - Galgotias University, India",
+      image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1741289813/dhruvSir_aaizql.jpg",
+      bio: "Dr. Dhruv Galgotia, the CEO of Galgotias University, is a dynamic leader committed to redefining higher education in India. His strategic vision has been instrumental in fostering an ecosystem of innovation, academic rigor, and industry collaboration. His leadership ensures that Galgotias University remains at the forefront of global education trends.",
+      email: ""
+    },
+    {
+      name: "Dr. M.B. Kayala",
+      role: "Vice Chancellor - Galgotias University, India",
+      image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1741290074/vcsir_aw86du.jpg",
+      bio: "Dr. M.B. Kayala serves as the Vice Chancellor of Galgotias University, bringing with him extensive experience in academic administration and research. His dedication to academic excellence and student development has been pivotal in strengthening the university’s academic framework and fostering a culture of research and innovation.",
+      email: ""
+    },
+    {
+      name: "Ms. Aradhana Galgotia",
+      role: "Director Operations - Galgotias University, India",
+      image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1741289813/aradhanaMaam_nkeqp0.jpg",
+      bio: "Ms. Aradhana Galgotia is the Director of Operations at Galgotias University. With a keen focus on operational excellence, student welfare, and institutional growth, she plays a crucial role in ensuring the seamless functioning of the university. Her leadership has been instrumental in enhancing the academic and infrastructural landscape of the institution.",
+      email: ""
+    },
+    {
+      name: "Prof. (Dr.) Avadhesh Kumar",
+      role: "Pro-Vice Chancellor - Galgotias University, India", 
+      image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1741289813/pvcsir_vs64x5.jpg",
+      bio: "Prof. (Dr.) Avadhesh Kumar, the Pro-Vice Chancellor of Galgotias University, is a distinguished academician with a wealth of experience in higher education. His expertise in academic policy-making and administration has significantly contributed to the university’s pursuit of excellence in teaching, research, and community engagement.",
+      email: ""
+    }
+  ];
   
-];
+  const patCommunityC: TeamMember[] = [
+    
+      {
+        name: "Dr. Shrddha Sagar",
+        role: "Advisor, IEEE WIE AG & SBC",
+        image: "",
+        bio: "Dr. Shrddha Sagar is a dedicated academician and an esteemed Advisor for IEEE WIE AG & SBC. With a strong commitment to promoting diversity and inclusion in STEM, she plays a pivotal role in mentoring students and professionals. Her leadership fosters an environment of innovation, technical excellence, and empowerment for women in engineering.",
+        email: ""
+      },
+    {
+      name: "Dr. Aanjey Mani Tripathi",
+      role: "IEEE Counsellor",
+      image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1741289813/Aanjey_wkazg5.jpg",
+      bio: "Dr. Aanjey Mani Tripathi serves as the IEEE Counsellor, mentoring students and professionals in the field of engineering and technology. His guidance and expertise play a crucial role in encouraging innovation, research, and professional development among IEEE members.",
+      email: ""
+    },
+    {
+      name: "Dr. Meenakshi Awasthi",
+      role: "Advisor, IEEE IAS SBC",
+      image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1741341173/meenakshi_mam_iwhgt0.jpg",
+      bio: "Dr. Meenakshi Awasthi is an esteemed advisor for IEEE IAS SBC, contributing her extensive knowledge and expertise to the organization. With a strong academic and research background, she is dedicated to guiding students and professionals in achieving excellence in their respective fields.",
+      email: ""
+    },
+    {
+      name: "Dr. Aditya Nath Bhatt",
+      role: "Advisor, IEEE IAS SBC",
+      image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1741341173/absir_nqwekk.jpg",
+      bio: "Dr. Aditya Nath Bhatt is a highly regarded academic and advisor for IEEE IAS SBC. His contributions in the domain of engineering and technology have been instrumental in shaping research initiatives and fostering a culture of technical excellence among IEEE members.",
+      email: ""
+    }
+  ];
+  
 
 function MemberCard({ member }: { member: TeamMember }) {
   return (
@@ -275,7 +269,7 @@ function MemberCard({ member }: { member: TeamMember }) {
       <DialogTrigger>
         <Card className="bg-white bg-opacity-40 backdrop-blur-md rounded-xl shadow-neumorphic hover:shadow-neumorphic-hover transition-shadow duration-300 w-800 h-96 flex flex-col justify-center">
           <CardContent className="p-6 flex flex-col items-center">
-            <div className="w-4400 h-4400 rounded-full overflow-hidden mb-6 shadow-neumorphic">
+            <div className="w-440 h-440 rounded-full overflow-hidden mb-6 shadow-neumorphic">
               <Image
                 src={member.image || "/placeholder.svg"}
                 alt={member.name}
@@ -289,7 +283,7 @@ function MemberCard({ member }: { member: TeamMember }) {
           </CardContent>
         </Card>
       </DialogTrigger>
-      <DialogContent className="bg-white bg-opacity-90 backdrop-blur-md rounded-xl shadow-neumorphic p-6 w-[28rem]">
+      <DialogContent className="bg-white bg-opacity-90 backdrop-blur-md rounded-xl shadow-neumorphic p-6 max-w-lg md:max-w-3xl">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-blue-900">{member.name}</DialogTitle>
         </DialogHeader>
@@ -298,8 +292,8 @@ function MemberCard({ member }: { member: TeamMember }) {
             <Image
               src={member.image || "/placeholder.svg"}
               alt={member.name}
-              width={1760}
-              height={1760}
+              width={1000}
+              height={1000}
               className="object-cover"
             />
           </div>
@@ -369,18 +363,6 @@ export default function TeamsPage() {
             <TeamGrid members={subCommunityD} />
            
           </TabsContent>
-          {/* <TabsContent value="subA">
-            <h2 className="text-2xl font-semibold text-blue-900 mb-6">Computer Society</h2>
-            <TeamGrid members={subCommunityA} />
-          </TabsContent>
-          <TabsContent value="subB">
-            <h2 className="text-2xl font-semibold text-blue-900 mb-6">Industry Applications Society</h2>
-            <TeamGrid members={subCommunityB} />
-          </TabsContent>
-          <TabsContent value="subC">
-            <h2 className="text-2xl font-semibold text-blue-900 mb-6">Women in Engineering</h2>
-            <TeamGrid members={subCommunityC} />
-          </TabsContent> */}
         </Tabs>
       </main>
     </div>

@@ -34,7 +34,7 @@ export default function Intro() {
     >
       <div className="relative text-center">
         <h1 className="text-4xl md:text-6xl  font-bold text-black mb-4">
-          IEEE Student Branch
+          WE ARE IEEE STUDENT BRANCH
         </h1>
         <h2 className="text-2xl md:text-3xl font-semibold text-red-600 mb-8">
           Galgotias University
