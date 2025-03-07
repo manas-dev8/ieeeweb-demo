@@ -2,6 +2,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 
 export default function FeaturesSectionDemo() {
@@ -86,6 +87,9 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
 };
 
 export const SkeletonOne = () => {
+  const [isHovered, setIsHovered] = useState(false);
+  const [pausePosition, setPausePosition] = useState(0);
+
   const announcements = [
     "International Electron Devices Meeting (IEDM) 2024: The 70th annual IEEE IEDM was held from December 7–11, 2024, featuring keynote talks on semiconductor industry outlooks, advancements in AI with energy-efficient architectures, and innovations in power electronics with silicon carbide.",
     "Launch of the International Roadmap for Devices and Systems (IRDS): In May 2016, IEEE launched the IRDS to provide guidance on future trends in computer systems, architectures, software, chips, and other components across the entire computer industry, expanding beyond traditional Moore's Law scaling.",
@@ -97,25 +101,31 @@ export const SkeletonOne = () => {
   ];
 
   return (
-    <div className="relative flex p-10 mt-10 flex-col items-center gap-6 h-3/4 w-full overflow-hidden bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white rounded-xl shadow-2xl">
+    <div className="relative flex p-4 sm:p-6 mt-6 sm:mt-10 flex-col items-center gap-3 sm:gap-6 h-[50vh] sm:h-3/4 w-[90%] sm:w-full max-w-lg sm:max-w-4xl mx-auto overflow-hidden bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white rounded-lg sm:rounded-xl shadow-lg sm:shadow-2xl">
       <motion.div
         className="flex flex-col text-left h-full w-full"
-        animate={{ y: ["100%", "-100%"] }}
+        animate={isHovered ? { y: pausePosition } : { y: ["100%", "-100%"] }}
         transition={{ repeat: Infinity, duration: 15, ease: "linear" }}
+        onMouseEnter={(e) => {
+          const rect = e.currentTarget.getBoundingClientRect();
+          const offsetY = rect.top - e.clientY; // Save where the pause happened
+          setPausePosition(offsetY);
+          setIsHovered(true);
+        }}
+        onMouseLeave={() => setIsHovered(false)}
       >
         {announcements.map((announcement, index) => (
-          <p key={index} className="text-l font-semibold mb-4">• {announcement}</p>
+          <p key={index} className="text-xs sm:text-base font-semibold mb-2 sm:mb-4">• {announcement}</p>
         ))}
       </motion.div>
     </div>
   );
 };
 
-
-
 export const SkeletonTwo = () => {
   const images = [
    
+   "https://res.cloudinary.com/dgna3swph/image/upload/t_Thumbnail/v1737884369/5c41699a-273b-4db6-8a48-6e4c00bcee8e_ljsyfh.jpg",
    "https://res.cloudinary.com/dgna3swph/image/upload/t_Thumbnail/v1737884369/5c41699a-273b-4db6-8a48-6e4c00bcee8e_ljsyfh.jpg",
    "https://res.cloudinary.com/dgna3swph/image/upload/t_Thumbnail/v1737884369/5c41699a-273b-4db6-8a48-6e4c00bcee8e_ljsyfh.jpg",
    "https://res.cloudinary.com/dgna3swph/image/upload/t_Thumbnail/v1737884369/5c41699a-273b-4db6-8a48-6e4c00bcee8e_ljsyfh.jpg",

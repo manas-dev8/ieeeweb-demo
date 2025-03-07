@@ -168,7 +168,7 @@ const subCommunityD: TeamMember[] = [
   {
     name: "Nalinish Ranjan",
     role: "Design Lead",
-    image: "/placeholder.svg?height=300&width=300",
+    image: "https://res.cloudinary.com/dgna3swph/image/upload/t_Profile/v1741368824/NALINISH_dj3etu.png",
     bio: "As Design Co-Lead of the IEEE Student Branch, Nalinish Ranjan is responsible for overseeing the visual identity and creative direction of the branch. He works closely with the team to design impactful content, ensuring consistency and enhancing the branch’s outreach and engagement.",
     email: "jane.smith@ieee.org"
   },
@@ -263,109 +263,120 @@ const patCommunityA: TeamMember[] = [
   ];
   
 
-function MemberCard({ member }: { member: TeamMember }) {
-  return (
-    <Dialog>
-      <DialogTrigger>
-        <Card className="bg-white bg-opacity-40 backdrop-blur-md rounded-xl shadow-neumorphic hover:shadow-neumorphic-hover transition-shadow duration-300 w-800 h-96 flex flex-col justify-center">
-          <CardContent className="p-6 flex flex-col items-center">
-            <div className="w-440 h-440 rounded-full overflow-hidden mb-6 shadow-neumorphic">
+  function MemberCard({ member }: { member: TeamMember }) {
+    return (
+      <Dialog>
+        <DialogTrigger>
+          <Card className="bg-white bg-opacity-40 backdrop-blur-md rounded-xl shadow-neumorphic hover:shadow-neumorphic-hover transition-shadow duration-300 w-800 h-96 flex flex-col justify-center">
+            <CardContent className="p-6 flex flex-col items-center">
+              <div className="w-440 h-440 rounded-full overflow-hidden mb-6 shadow-neumorphic">
+                <Image
+                  src={member.image || "/placeholder.svg"}
+                  alt={member.name}
+                  width={176}
+                  height={176}
+                  className="object-cover"
+                />
+              </div>
+              <h3 className="text-lg font-semibold text-blue-900">{member.name}</h3>
+              <p className="text-blue-600 text-sm">{member.role}</p>
+            </CardContent>
+          </Card>
+        </DialogTrigger>
+        <DialogContent className="bg-white bg-opacity-90 backdrop-blur-md rounded-xl shadow-neumorphic p-6 max-w-lg md:max-w-3xl">
+          <DialogHeader>
+            <DialogTitle className="text-2xl font-bold text-blue-900">{member.name}</DialogTitle>
+          </DialogHeader>
+          <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+            <div className="w-3000 h-3000 rounded-full overflow-hidden shadow-neumorphic">
               <Image
                 src={member.image || "/placeholder.svg"}
                 alt={member.name}
-                width={176}
-                height={176}
+                width={1000}
+                height={1000}
                 className="object-cover"
               />
             </div>
-            <h3 className="text-lg font-semibold text-blue-900">{member.name}</h3>
-            <p className="text-blue-600 text-sm">{member.role}</p>
-          </CardContent>
-        </Card>
-      </DialogTrigger>
-      <DialogContent className="bg-white bg-opacity-90 backdrop-blur-md rounded-xl shadow-neumorphic p-6 max-w-lg md:max-w-3xl">
-        <DialogHeader>
-          <DialogTitle className="text-2xl font-bold text-blue-900">{member.name}</DialogTitle>
-        </DialogHeader>
-        <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-          <div className="w-3000 h-3000 rounded-full overflow-hidden shadow-neumorphic">
-            <Image
-              src={member.image || "/placeholder.svg"}
-              alt={member.name}
-              width={1000}
-              height={1000}
-              className="object-cover"
-            />
+            <div>
+              <p className="text-blue-600 font-semibold mb-2">{member.role}</p>
+              <p className="text-gray-700 mb-4">{member.bio}</p>
+              <p className="text-blue-900">
+                <strong>Contact:</strong> {member.email}
+              </p>
+            </div>
           </div>
-          <div>
-            <p className="text-blue-600 font-semibold mb-2">{member.role}</p>
-            <p className="text-gray-700 mb-4">{member.bio}</p>
-            <p className="text-blue-900">
-              <strong>Contact:</strong> {member.email}
-            </p>
-          </div>
-        </div>
-      </DialogContent>
-    </Dialog>
-  );
-}
-
-
-function TeamGrid({ members }: { members: TeamMember[] }) {
-  return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-      {members.map((member, index) => (
-        <MemberCard key={index} member={member} />
-      ))}
-    </div>
-  )
-}
-
-export default function TeamsPage() {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100">
-
-      <main className="container mx-auto px-4 py-16 pt-24">
-        <h1 className="text-4xl font-bold text-center text-blue-900 mb-12">Our Team</h1>
-        <Tabs defaultValue="board" className="w-auto mx-auto">
-          <TabsList className="grid w-auto grid-cols-2 md:grid-cols-3 bg-blue-100 rounded-xl p-1 mb-8">
-            <TabsTrigger value="PAT" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">PATRONS</TabsTrigger>
-            <TabsTrigger value="board" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Board</TabsTrigger>
-            <TabsTrigger value="executive" className="data-[state=active]:bg-white bg-blue-100 data-[state=active]:text-blue-900">ExComm</TabsTrigger>
-            {/* <TabsTrigger value="subA" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Computer Society</TabsTrigger> */}
-            {/* <TabsTrigger value="subB" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Industry Applications Society</TabsTrigger> */}
-            {/* <TabsTrigger value="subC" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Women in Engineering</TabsTrigger> */}
-          </TabsList>
-          <TabsContent value="PAT">
-            <h2 className="text-2xl font-semibold text-blue-900 mb-6 text-center">PATRONS</h2>
-            <h2 className="text-2xl font-semibold text-blue-900 mb-6">Chief Patron</h2>
-            <TeamGrid members={patCommunityA} />
-            <h2 className="text-2xl font-semibold text-blue-900 mb-3 pt-4 ">Patrons</h2>
-            <TeamGrid members={patCommunityB} />
-            <h2 className="text-2xl font-semibold text-blue-900 mb-6 ">Advisors</h2>
-            <TeamGrid members={patCommunityC} />
-          </TabsContent>
-          <TabsContent value="board">
-            <h2 className="text-2xl font-semibold text-blue-900 mb-6">Board Team</h2>
-            <TeamGrid members={boardMembers} />
-          </TabsContent>
-          <TabsContent value="executive">
-            <h2 className="text-4xl font-bold text-center text-blue-900 mb-6">Executive Committee</h2>
-            <h2 className="text-2xl font-semibold text-blue-900 mb-6">Board Team</h2>
-            <TeamGrid members={boardMembers} />
-            <h2 className="text-2xl font-semibold pt-5 text-blue-900 mb-6">Computer Society</h2>
-            <TeamGrid members={subCommunityA} />
-            <h2 className="text-2xl font-semibold pt-5 text-blue-900 mb-6">Industry Applications Society</h2>
-            <TeamGrid members={subCommunityB} />
-            <h2 className="text-2xl font-semibold pt-5 text-blue-900 mb-6">Women in Engineering</h2>
-            <TeamGrid members={subCommunityC} />
-            <h2 className="text-2xl font-semibold pt-5 text-blue-900 mb-6">Creative Committee</h2>
-            <TeamGrid members={subCommunityD} />
-           
-          </TabsContent>
-        </Tabs>
-      </main>
-    </div>
-  )
-}
-
+        </DialogContent>
+      </Dialog>
+    );
+  }
+  
+  
+  function TeamGrid({ members }: { members: TeamMember[] }) {
+    return (
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+        {members.map((member, index) => (
+          <MemberCard key={index} member={member} />
+        ))}
+      </div>
+    )
+  }
+  
+  export default function TeamsPage() {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100">
+  
+        <main className="container mx-auto px-4 py-16 pt-24">
+          <h1 className="text-4xl font-bold text-center text-blue-900 mb-12">Our Team</h1>
+          <Tabs defaultValue="board" className="w-auto mx-auto">
+            <TabsList className="grid w-auto grid-cols-2 md:grid-cols-3 bg-blue-100 rounded-xl p-1 mb-8">
+              <TabsTrigger value="PAT" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">PATRONS</TabsTrigger>
+              <TabsTrigger value="board" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Board</TabsTrigger>
+              <TabsTrigger value="executive" className="data-[state=active]:bg-white bg-blue-100 data-[state=active]:text-blue-900">ExComm</TabsTrigger>
+              {/* <TabsTrigger value="subA" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Computer Society</TabsTrigger> */}
+              {/* <TabsTrigger value="subB" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Industry Applications Society</TabsTrigger> */}
+              {/* <TabsTrigger value="subC" className="data-[state=active]:bg-white data-[state=active]:text-blue-900">Women in Engineering</TabsTrigger> */}
+            </TabsList>
+            <TabsContent value="PAT">
+              <h2 className="text-2xl font-semibold text-blue-900 mb-6 text-center">PATRONS</h2>
+              <h2 className="text-2xl font-semibold text-blue-900 mb-6">Chief Patron</h2>
+              <TeamGrid members={patCommunityA} />
+              <h2 className="text-2xl font-semibold text-blue-900 mb-3 pt-4 ">Patrons</h2>
+              <TeamGrid members={patCommunityB} />
+              <h2 className="text-2xl font-semibold text-blue-900 mb-6 ">Advisors</h2>
+              <TeamGrid members={patCommunityC} />
+            </TabsContent>
+            <TabsContent value="board">
+              <h2 className="text-2xl font-semibold text-blue-900 mb-6">Board Team</h2>
+              <TeamGrid members={boardMembers} />
+            </TabsContent>
+            <TabsContent value="executive">
+              <h2 className="text-4xl font-bold text-center text-blue-900 mb-6">Executive Committee</h2>
+              <h2 className="text-2xl font-semibold text-blue-900 mb-6">Board Team</h2>
+              <TeamGrid members={boardMembers} />
+              <h2 className="text-2xl font-semibold pt-5 text-blue-900 mb-6">Computer Society</h2>
+              <TeamGrid members={subCommunityA} />
+              <h2 className="text-2xl font-semibold pt-5 text-blue-900 mb-6">Industry Applications Society</h2>
+              <TeamGrid members={subCommunityB} />
+              <h2 className="text-2xl font-semibold pt-5 text-blue-900 mb-6">Women in Engineering</h2>
+              <TeamGrid members={subCommunityC} />
+              <h2 className="text-2xl font-semibold pt-5 text-blue-900 mb-6">Creative Committee</h2>
+              <TeamGrid members={subCommunityD} />
+             
+            </TabsContent>
+            {/* <TabsContent value="subA">
+              <h2 className="text-2xl font-semibold text-blue-900 mb-6">Computer Society</h2>
+              <TeamGrid members={subCommunityA} />
+            </TabsContent>
+            <TabsContent value="subB">
+              <h2 className="text-2xl font-semibold text-blue-900 mb-6">Industry Applications Society</h2>
+              <TeamGrid members={subCommunityB} />
+            </TabsContent>
+            <TabsContent value="subC">
+              <h2 className="text-2xl font-semibold text-blue-900 mb-6">Women in Engineering</h2>
+              <TeamGrid members={subCommunityC} />
+            </TabsContent> */}
+          </Tabs>
+        </main>
+      </div>
+    )
+  }

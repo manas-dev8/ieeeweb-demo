@@ -8,7 +8,7 @@ import FeaturesSectionDemo from "@/components/ui/feature";
 import ScrollingBanner from "@/components/scrolling-banner";
 import { ImagesSliderDemo } from "@/components/imageslider";
 import Intro from "@/components/Intro"
-// import { InfiniteMovingCardsDemo } from "@/components/InfiniteMovingCardsDemo";
+import { WorldMapDemo } from "@/components/world-mapcomp";
 
 export default function HomePage() {
   return (
@@ -18,8 +18,9 @@ export default function HomePage() {
       </div>
       <ScrollingBanner />
       <Intro/>
-      {/* <InfiniteMovingCardsDemo /> */}
       <FeaturesSectionDemo />
+      <WorldMapDemo />
+
     </>
   );
 }
