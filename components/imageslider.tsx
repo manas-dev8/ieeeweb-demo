@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { ImagesSlider } from "@/components/ui/images-slider";
+import Image from "next/image";
 
 export function ImagesSliderDemo() {
   const media = [
@@ -25,7 +26,7 @@ export function ImagesSliderDemo() {
           {item.includes(".mov") || item.includes(".mp4") ? (
             <video src={item} className="h-full w-auto object-cover" controls autoPlay loop muted />
           ) : (
-            <img src={item} className="h-full w-auto object-cover" alt={`Slide ${index + 1}`} />
+            <Image src={item} className="h-full w-auto object-cover" alt={`Slide ${index + 1}`} />
           )}
         </motion.div>
       ))}
